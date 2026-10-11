@@ -2,7 +2,7 @@
     width: 100%;
     height: 100vh;
     background-color: gray;
-
+    display: flex;
 
     aside {
         width: 25%;
@@ -25,10 +25,11 @@
             display: flex;
             flex-direction: column;
             gap: 2rem;
+
             .funcionalidades {
                 display: flex;
                 flex-direction: column;
-
+                gap: 0.5rem;
 
                 .selecionado {
                     width: 100%;
@@ -127,4 +128,165 @@
         }
 
     }
+
+    main {
+        width: 85%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .criacao {
+            margin-top: 5rem;
+            width: 90%;
+            padding: 40px 0px 40px 0px;
+            background-color: #BFE3F8;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+
+            form {
+
+                display: flex;
+                flex-direction: column;
+                gap: 1.5rem;
+                .L1 {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+
+                    input {
+                        transition: 0.3s;
+                        height: 3.5rem;
+                        width: 30rem;
+                        background-color: transparent;
+                        border-radius: 6px;
+                        border: 3px solid #FFF;
+                        padding-left: 2rem;
+                    }
+
+                    input:hover {
+                        transition: 0.3s;
+                        background-color: #434343;
+                        color: #BFE3F8;
+
+                        border: 3px solid #434343;
+                    }
+
+                    input:focus {
+                        transition: 0.3s;
+                        background-color: #434343;
+                        color: #BFE3F8;
+
+                        border: 3px solid #434343;
+                    }
+
+                    .cores {
+                        display: flex;
+                        align-items: center;
+                        gap: 0.5rem;
+
+                        .cor {
+                            transition: 0.3s;
+                            width: 3rem;
+                            height: 3rem;
+                            border-radius: 50%;
+                            background-color: #970303;
+                            border: 5px solid #FFF;
+                        }
+
+                        .cor:hover {
+                            transition: 0.3s;
+                            border: 5px solid #434343;
+                        }
+                    }
+
+                    button {
+                        height: 3.5rem;
+                        transition: 0.3s;
+                        padding: 0px 20px 0px 20px;
+                        background-color: #BFE3F8;
+                        border-radius: 6px;
+                        border: 3px solid #FFF;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+
+                    button:hover {
+                        transition: 0.3s;
+                        background-color: #434343;
+                        color: #BFE3F8;
+
+                        border: 3px solid #434343;
+                    }
+                }
+
+                .L2 {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+
+                    input {
+                        transition: 0.3s;
+                        height: 10rem;
+                        width: 30rem;
+                        background-color: transparent;
+                        border-radius: 6px;
+                        border: 3px solid #FFF;
+                        padding-left: 2rem;
+                    }
+
+                    input:hover {
+                        transition: 0.3s;
+                        background-color: #434343;
+                        color: #BFE3F8;
+
+                        border: 3px solid #434343;
+                    }
+
+                    input:focus {
+                        transition: 0.3s;
+                        background-color: #434343;
+                        color: #BFE3F8;
+
+                        border: 3px solid #434343;
+                    }
+
+                    .textos {
+                        display: flex;
+                        align-items: center;
+                        gap: 2rem;
+
+                        .texto {
+                            background-color: transparent;
+                            border: 3px solid #FFF;
+                            border-radius: 20px;
+                            padding: 0.2em 3em 0.2em 3em;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            p {
+                                color: #000;
+                                font-size: 1.3rem;
+
+                                span {
+                                    color: #1D5C94;
+                                }
+                            }
+                        }
+
+                        .texto:hover {
+                            transition: 0.3s;
+                            background-color: #434343;
+                            border: 3px solid #434343;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
 }

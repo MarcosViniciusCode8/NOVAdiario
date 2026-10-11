@@ -28,8 +28,42 @@ export default function Diario() {
         </div>
       </aside>
       <main>
-        <div className="criacao"></div>
-        <div className="anotacoes"></div>
+        <div className="criacao">
+          <form>
+            <div className='L1'>
+              <input type="text" placeholder='Titulo:' />
+              <div className="cores">
+                <div className="cor"></div>
+                <div className="cor"></div>
+                <div className="cor"></div>
+                <div className="cor"></div>
+                <div className="cor"></div>
+                <div className="cor"></div>
+                <div className="cor"></div>
+                <div className="cor"></div>
+                <div className="cor"></div>
+                <div className="cor"></div>
+                <div className="cor"></div>
+              </div>
+              <button>Criar Nota</button>
+            </div>
+            <div className="L2">
+              <input type="text" placeholder='Texto:' />
+              <div className="textos">
+                <div className="texto">
+                  <p> <span>&#123;</span>Nome<span>&#125;</span></p>
+                </div>
+                <div className="texto">
+                  <p> <span>&#123;</span>Teste<span>&#125;</span></p>
+                </div>
+              </div>
+            </div>
+
+          </form>
+        </div>
+        <div className="anotacoes">
+          <div className="anotacao"></div>
+        </div>
       </main>
     </div>
   )
