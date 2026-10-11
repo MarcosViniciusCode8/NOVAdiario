@@ -1,6 +1,9 @@
+import { useState } from 'react'
 import './App.scss'
 
 export default function Diario() {
+  const [textoVisivel, setTextoVisivel] = useState(false)
+
   return (
     <div className="pagina-diario">
       <aside>
@@ -62,10 +65,37 @@ export default function Diario() {
           </form>
         </div>
         <div className="anotacoes">
-          <div className="anotacao"></div>
+
+          <div className={`anotacao ${textoVisivel ? 'anotacao-aberta' : ''}`}>
+            <div className='info'>
+              <p>Comi 2 kg de merda</p>
+              <p>2026/10/10</p>
+            </div>
+            <div className="sobre">
+
+              <button><i class="fa-regular fa-star"></i></button>
+              <button><i class="fa-solid fa-trash-can"></i></button>
+              <button><i class="fa-solid fa-pen"></i></button>
+
+              <button className='vermais' onClick={() => setTextoVisivel(!textoVisivel)}>
+                {textoVisivel ? 'Ocultar seu texto' : 'Ver seu texto'}
+              </button>
+
+
+            </div>
+            <div className="conteudo-nota">
+              <p>Este é o texto completo da sua anotação. Ele aparece quando você clica em “Ver seu texto”.</p>
+            </div>
+          </div>
+          <div className="anotacao">
+
+          </div>
+          <div className="anotacao">
+
+          </div>
         </div>
+
       </main>
     </div>
   )
 }
-
