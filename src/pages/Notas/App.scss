@@ -1,0 +1,130 @@
+.pagina-diario {
+    width: 100%;
+    height: 100vh;
+    background-color: gray;
+
+
+    aside {
+        width: 25%;
+        height: 100vh;
+        background-color: rgb(180, 170, 170);
+        display: flex;
+        padding: 1rem;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 20px;
+        border-radius: 0px 8px 8px 0px;
+
+        img {
+            width: 95%;
+            height: auto;
+        }
+
+
+        .superior {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            .funcionalidades {
+                display: flex;
+                flex-direction: column;
+
+
+                .selecionado {
+                    width: 100%;
+                    height: 5rem;
+                    border-radius: 6px;
+                    background-color: rgb(83, 83, 83);
+                    display: flex;
+                    align-items: center;
+                    justify-content: start;
+                    padding: 1.5rem;
+                    gap: 0.5rem;
+
+                    i {
+                        font-size: 2.5rem;
+                        color: #BFE3F8;
+                    }
+
+                    p {
+                        font-size: 1.5rem;
+                        color: #BFE3F8;
+                    }
+                }
+
+                .nselecionado {
+                    transition: 0.3s;
+                    width: 100%;
+                    height: 5rem;
+                    border-radius: 6px;
+                    background-color: transparent;
+                    display: flex;
+                    align-items: center;
+                    justify-content: start;
+                    padding: 1.5rem;
+                    gap: 0.5rem;
+
+                    i {
+                        font-size: 2.5rem;
+                        color: #434343;
+                    }
+
+                    p {
+                        font-size: 1.5rem;
+                        color: #434343;
+                    }
+                }
+            }
+
+            .nselecionado:hover {
+                background-color: rgb(83, 83, 83);
+                transition: 0.3s;
+
+                i {
+                    color: #BFE3F8;
+                }
+
+                p {
+                    color: #BFE3F8;
+                }
+            }
+        }
+
+        .logout {
+            transition: 0.3s;
+            width: 100%;
+            height: 5rem;
+            border-radius: 6px;
+            background-color: transparent;
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            padding: 1.5rem;
+            gap: 0.5rem;
+
+            i {
+                font-size: 2.5rem;
+                color: #434343;
+            }
+
+            p {
+                font-size: 1.5rem;
+                color: #434343;
+            }
+        }
+
+        .logout:hover {
+            background-color: rgb(197, 84, 84);
+            transition: 0.3s;
+
+            i {
+                color: #970303;
+            }
+
+            p {
+                color: #970303;
+            }
+        }
+
+    }
+}
