@@ -1,0 +1,126 @@
+ .pagina-login {
+     width: 100%;
+     min-height: 100vh;
+     background-color: gray;
+     display: flex;
+
+     main {
+         width: 100%;
+         min-height: 100vh;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+
+         .login {
+             width: 40%;
+             background-color: #434343;
+             border-radius: 6px;
+             height: 80%;
+             border-top: 10px solid #BFE3F8;
+
+             form {
+                 display: flex;
+                 flex-direction: column;
+                 justify-content: space-between;
+                 height: 100%;
+                 padding: 20%;
+
+                 .introducao {
+                     display: flex;
+                     flex-direction: column;
+                     align-items: center;
+                     text-align: center;
+                     color: #2563eb;
+                 }
+
+                 .entradas {
+                     display: flex;
+                     flex-direction: column;
+                     gap: 60px;
+
+                     .username {
+                         display: flex;
+                         flex-direction: column;
+
+                         label {
+                             color: #64748b;;
+                         }
+
+                         input {
+                             width: 100%;
+                             height: 40px;
+                             border-radius: 6px;
+                             border: 1px solid #BFE3F8;
+                             background-color: transparent;
+                             padding-left: 15px;
+                         }
+                     }
+
+                     .password {
+                         display: flex;
+                         flex-direction: column;
+
+                         label {
+                             color: #64748b;;
+                         }
+
+                         input {
+                             width: 100%;
+                             height: 40px;
+                             border-radius: 6px;
+                             border: 1px solid #BFE3F8;
+                             background-color: transparent;
+                             padding-left: 15px;
+                         }
+                     }
+                 }
+
+                 .resolucoes {
+                     display: flex;
+                     flex-direction: column;
+                     align-items: center;
+
+                     button {
+                         width: 100%;
+                         height: 40px;
+                         border-radius: 6px;
+                         border: none;
+                         background-color: #BFE3F8;
+                         cursor: pointer;
+                         transition: background-color 0.2s ease,
+                             transform 0.2s ease;
+
+                         &:hover {
+                             background-color: #A5D5F2;
+                         }
+
+                         &:active {
+                             transform: scale(0.98);
+                         }
+                     }
+
+                     p {
+                         font-size: 14px;
+                         color: #64748b;
+                         text-align: center;
+                         margin-top: 16px;
+
+                         a {
+                             color: #2563eb;
+                             font-weight: 600;
+                             text-decoration: none;
+                             margin-left: 4px;
+                             transition: color 0.2s ease;
+
+                             &:hover {
+                                 color: #1d4ed8;
+                                 text-decoration: underline;
+                             }
+                         }
+                     }
+                 }
+             }
+         }
+     }
+ }
