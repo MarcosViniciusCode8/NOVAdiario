@@ -1,6 +1,10 @@
+import {useState } from 'react'
 import './App.scss'
+import Anotacao from '../../components/anotacao/index.jsx'
 
 export default function Diario() {
+
+
   return (
     <div className="pagina-diario">
       <aside>
@@ -63,47 +67,18 @@ export default function Diario() {
         </div>
         <div className="anotacoes">
 
-          <div className="anotacao">
-            <div className="cima">
-              <h2>Título da anotação</h2>
-              <time dateTime="2026-10-13">13 de outubro de 2026</time>
-            </div>
-            <div className="meio">
-              <button type="button" className="abrir-texto">Abrir texto</button>
-            </div>
-            <div className="baixo">
-              <button type="button" className="excluir">Excluir</button>
-              <button type="button" className="editar">Editar</button>
-            </div>
-          </div>
 
-          <div className="anotacao">
-            <div className="cima">
-              <h2>Título da anotação</h2>
-              <time dateTime="2026-10-14">14 de outubro de 2026</time>
-            </div>
-            <div className="meio">
-              <button type="button" className="abrir-texto">Abrir texto</button>
-            </div>
-            <div className="baixo">
-              <button type="button" className="excluir">Excluir</button>
-              <button type="button" className="editar">Editar</button>
-            </div>
-          </div>
+<Anotacao
+    titulo="Estudos"
+    data="17/10/2026"
+    texto="Estudar programação."
+    cor="rgb(34, 117, 48)"
+/>
+<Anotacao/>
+<Anotacao/>
 
-          <div className="anotacao">
-            <div className="cima">
-              <h2>Título da anotação</h2>
-              <time dateTime="2026-10-13">13 de outubro de 2026</time>
-            </div>
-            <div className="meio">
-              <button type="button" className="abrir-texto">Abrir texto</button>
-            </div>
-            <div className="baixo">
-              <button type="button" className="excluir">Excluir</button>
-              <button type="button" className="editar">Editar</button>
-            </div>
-          </div>
+
+
 
 
 
